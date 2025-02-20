@@ -1,7 +1,140 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Blazer's Works</title>
+<link rel='stylesheet' type='text/css' href='style.css'>
+</head>
 <body>
-<h1>Hello World</h1>
+<div class="intro">
+<h1>Warm Greetings!</h1>
+<p>You are seeing some of the creations from Alexander "Blazer" Edwin, including this page!</p>
+<p>If you are interested in my skills, feel free to contact me using the following information.</p>
+
+<div class="contactInfo">
+<h2>Contact Info</h2>
+<p>E-mail: aedwinb98@gmail.com</p>
+</div>
+
+</div>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Games')" id="defaultOpen">Game Projects</button>
+  <button class="tablinks" onclick="openTab(event, 'Illustrations')">Illustration Sample</button>
+</div>
+
+<div id="Games" class="tabContent">
+<div class="portfolioEntry">
+<div class="gameThumb" >
+<br><br><br>
+<img src="Images/GameProj00.png" alt="A Warm Winter">
+</div>
+<div class="gameDesc">
+<h2>A Warm Winter</h2>
+
+<p>Keep yourself warm in this everlasting winter... Plant warm plants to keep you warm...</p>
+
+<p>Unlock more plots by planting plants that can protect your plants from the cold.</p>
+
+<p>Beware of changes in the weather; they can make or break your survivability.</p>
+<div class="externalButton">
+<a href="https://daun-kompak.itch.io/a-warm-winter" target="_blank" rel="noopener noreferrer">View in Itch.io</a>
+</div>
+</div>
+</div>
+
+<div class="portfolioEntry">
+<div class="gameThumb" >
+<br><br><br>
+<img src="Images/GameProj01.gif" alt="Forma Arcanum">
+</div>
+<div class="gameDesc">
+<h2>Forma Arcanum</h2>
+<p>More Magic Criminal Incidents!
+Public Outcries for Drastic Measures Increase!</p>
+<p>Play as Kayden and his trusty mystical magic cane. Explore the world of Forma Arcanum in this retro-inspired 2D physics platformer game! In your journey, you will uncover secrets of the rifts that links the material world with the mystical world.</p>
+<p>Uncover the truth behind the calamity that will soon befall the city....</p>
+<div class="externalButton">
+<a href="https://daun-kompak.itch.io/forma-arcanum" target="_blank" rel="noopener noreferrer">View in Itch.io</a>
+</div>
+</div>
+</div>
+
+<div class="portfolioEntry">
+<div class="gameDesc2">
+<div>
+<img src="Images/GameProj02.jpg" alt="Oyen vs. Everyone">
+</div>
+<h2>Oyen vs. Everyone</h2>
+<p>Oyen vs. Everybody is an Action packed Scrabble based combat, where you get to explore the Cat City from the perspective of Oyen - the runt of the pack.</p>
+<p>Witness Oyen's rise to power - or his fall from humanity(?).</p>
+<div class="externalButton">
+<a href="https://barablazer.itch.io/oyen-vs-everyone" target="_blank" rel="noopener noreferrer">View in Itch.io</a>
+</div>
+</div>
+</div>
+
 <p>I'm hosted with GitHub Pages.</p>
+<p class="Sample">See more at my itch.io page</p>
+<form action="https://barablazer.itch.io/">
+    <input type="submit" value="Visit Itch.io" />
+</form>
+</div>
+</div>
+
+<div id="Illustrations" class="tabContent">
+
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Retro1.png" alt="Retro: Spritesheet Croc">
+<p>Killer Croc (Batman) RPG Maker Spritesheet</p>
+</div>
+
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Retro2.png" alt="Retro: Spritesheet Volga">
+<p>Volga (Zelda) RPG Maker Spritesheet</p>
+</div>
+
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Retro3.gif" alt="Retro: Animated Asuka">
+<p>Asuka (Tekken) RPG Maker Animated Sprite</p>
+</div>
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Modern1.png" alt="Modern: Enhanced Meidobot">
+<p>Enhanced Meidobot Attacks</p>
+</div>
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Modern2.png" alt="Modern: Mop Meidobot">
+<p>Mop Meidobot Standby</p>
+</div>
+<div class="illustEntry">
+<img class="illustThumb" src="Images/Modern3.png" alt="Modern: Sera Meidobot">
+<p>Sera Meidobot Standby</p>
+</div>
+
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
+document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
